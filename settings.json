@@ -5,10 +5,13 @@
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
     "code-runner.executorMap": {
-        "python": "cls ; python -u",    
+        "python": "cls ; python -u"    
     },
     "code-runner.ignoreSelection": true,
     "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
     "workbench.iconTheme": "material-icon-theme",
-    "python.defaultInterpreterPath": "python"
+    "python.defaultInterpreterPath": "python",
+    "editor.guides.indentation": true,
+    "editor.guides.bracketPairs": true,
+    "editor.renderWhitespace": "all"
 }
