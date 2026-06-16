@@ -1,2 +1,1 @@
-print('Hello, World!')
-print('Opa, editei.')
+print(1 + 1)
