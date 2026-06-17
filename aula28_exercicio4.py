@@ -5,6 +5,7 @@ Se o nome e idade forem digitados
     Exiba:
         Seu nome é: {nome}
         Seu nome invertido é {nome_invertido}
+        Seu nome contém (ou não) espaços
         Seu nome contém {n} letras
         A primeira letra do seu nome é {letra}
         A última letra do seu nome é {letra}
