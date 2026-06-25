@@ -18,7 +18,7 @@ while True:
         numeros_validos = None
         
     if numeros_validos is None:
-        print('Um ou abos os números digitados são invalidos.')
+        print('Um ou ambos os números digitados são invalidos.')
         continue
 
     ##########
