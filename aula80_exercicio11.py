@@ -31,7 +31,7 @@ def duplicador():
         print(lista)
         for numero in lista:
             print(numero)
-            if numero[0] == numero[1]:
+            # if numero[0] == numero[1]:
                 # print("Duplicado!")
 
         print()
