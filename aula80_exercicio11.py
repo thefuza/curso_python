@@ -26,15 +26,35 @@ lista_de_listas_de_inteiros = [
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
 ]
 
-def duplicador():
-    for lista in lista_de_listas_de_inteiros:
-        print(lista)
-        for numero in lista:
-            print(numero)
-            # if numero[0] == numero[1]:
-                # print("Duplicado!")
+# contador = 1
+# def checar_duplicatas(lista):
+#     visto = set()
 
-        print()
-        
+#     for i in lista:
+#         if i in visto:
+#             return i
+#         visto.add(i)
+#     return -1
 
-duplicador()
+# for lista_interna in lista_de_listas_de_inteiros:
+#     resultado = checar_duplicatas(lista_interna)
+
+#     print(f'Lista {contador} = {lista_interna} -> Retorno: {resultado}')
+#     contador += 1
+
+
+contador = 1
+def checar_duplicatas(lista):
+    visto = set()
+
+    for i in lista:
+        if i in visto:
+            return i
+        visto.add(i)
+    return -1
+
+for lista_interna in lista_de_listas_de_inteiros:
+    resultado = checar_duplicatas(lista_interna)
+
+    print(f'Lista {contador} = {lista_interna} -> Retorno: {resultado}')
+    contador += 1
