@@ -1,29 +1,26 @@
-# Funções decoradoras e decoradores
-# Decorar = Adcionar / Remover / Restringir / Alterar
-# Funções decoradoras são funções que decoram outras funções
-# Decoradores são usados para fazer o python
-# usar as funções decoradoras em outras funções.
-# Decoradores são 'Syntax Sugar" (Açucar Sintatico)
+# Decoradores com parâmetros
+def fabrica_de_decoradores(a=None, b=None, c=None):
+    def fabrica_de_funcoes(func):
+        print('Decoradora 1')
 
-def criar_funcao(func):
-    def interna(*args, **kwargs):
-        for arg in args:
-            print('Vou te decorar')
-            is_string(arg)
-        resultado = func(*args, **kwargs)
-        print(f'O seu resultado foi {resultado}')
-        print('OK, AGORA VOCÊ FOI DECORADA')
-        return resultado
-    return interna 
+        def aninhada(*args, **kwargs):
+            print('Parâmetros do decorador, ', a, b, c)
+            print('Aninhada')
+            res = func(*args, **kwargs)
+            return res
+        return aninhada
+    return fabrica_de_funcoes
 
-@criar_funcao
-def inverte_string(string):
-    return string[::-1]
 
-def is_string(param):
-    if not isinstance(param, str):
-        raise TypeError ('parametro deve ser uma string')
-    
+@fabrica_de_decoradores(1, 2, 3)
+def soma(x, y):
+    return x + y
 
-invertida = inverte_string('123')
-print(invertida)
+
+decoradora = fabrica_de_decoradores()
+multiplica = decoradora(lambda x, y: x * y)
+
+dez_mais_cinco = soma(10, 5)
+dez_vezes_cinco = multiplica(10, 5)
+print(dez_mais_cinco)
+print(dez_vezes_cinco)
