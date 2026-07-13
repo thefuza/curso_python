@@ -21,7 +21,7 @@ def filtrar_preco(produto):
 # ]
 
 novos_produtos = filter(
-    # lambda p: p['preco'] > 100,
+    # lambda produto: produto['preco'] > 100,
     filtrar_preco,
     produtos
 )
