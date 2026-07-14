@@ -11,7 +11,6 @@ fusca = Carro('Fusca')
 Carro.acelerar(fusca)
 fusca.acelerar()
 # print(fusca.nome)
-
 celta = Carro('Celta')
 Carro.acelerar(celta)
 celta.acelerar()
