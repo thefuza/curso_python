@@ -8,9 +8,11 @@ class Carro:
         print(f'{self.nome} está acelerando...')
 
 fusca = Carro('Fusca')
-print(fusca.nome)
+Carro.acelerar(fusca)
 fusca.acelerar()
+# print(fusca.nome)
 
 celta = Carro('Celta')
-print(celta.nome) 
+Carro.acelerar(celta)
 celta.acelerar()
+# print(celta.nome)
