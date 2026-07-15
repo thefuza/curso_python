@@ -1,0 +1,22 @@
+[
+  {
+    "nome": "Morgana",
+    "idade": 1,
+    "cor": "Cinza"
+  },
+  {
+    "nome": "Margot",
+    "idade": 1,
+    "cor": "Cinza com branco"
+  },
+  {
+    "nome": "Nala",
+    "idade": 3,
+    "cor": "Mariscada Siamês"
+  },
+  {
+    "nome": "Flor",
+    "idade": 0,
+    "cor": "Tricolor"
+  }
+]
