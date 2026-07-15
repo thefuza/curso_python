@@ -4,7 +4,9 @@
 # da classe com os dados salvos
 # faça em arquivos separados
 import json
-from aula127_exercicio16_classe import Gato
+from aula127_exercicio16_classe import CAMINHO_ARQUIVO, Gato
+
+CAMINHO_ARQUIVO = 'gatinhas.json'
 
 
 morgana = Gato('Morgana', 1, 'Cinza')
@@ -19,7 +21,7 @@ gatas = [
     flor.__dict__,
 ]
 
-with open('gatinhas.json', 'w', encoding='utf8') as arquivo:
+with open(CAMINHO_ARQUIVO, 'w', encoding='utf8') as arquivo:
     json.dump(
         gatas,
         arquivo,
