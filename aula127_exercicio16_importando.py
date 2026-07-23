@@ -4,7 +4,7 @@
 # da classe com os dados salvos
 # faça em arquivos separados
 import json
-from aula127_exercicio16_classe import Gato
+from aula127_exercicio16_classe import CAMINHO_ARQUIVO, Gato
 
 
 dados_carregados = []
